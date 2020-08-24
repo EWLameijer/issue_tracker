@@ -1,0 +1,9 @@
+
+
+2020-08-24-13:46
+
+
+DESIGN 
+Basically, an issue tracker according to Dalio (Principles) 
+For now: tracking time (tracking financial damages may also be useful later on, but for now settle on one unit of damage)
+
