@@ -1,9 +1,37 @@
 
-
-2020-08-24-13:46
+2020-08-28-19:57->20:38 = +41=51 min :) 
+2020-08-24-13:46-13:57 = 10 min; 
 
 
 DESIGN 
 Basically, an issue tracker according to Dalio (Principles) 
 For now: tracking time (tracking financial damages may also be useful later on, but for now settle on one unit of damage)
+
+Basically: report issues: date, time, // day of week is implied, damage, description. Possibly: which rule was broken?
+rules: have file, each rule has an ID and a (current) formulation. Rule = situation + action (+question? Or is that inherent in the situation?)
+
+So basically [unless I want to use a database]
+
+File 1: issues: datetime, damage, rule 
+File 2: rules: rule_id (int), + description
+
+Interface: be able to find most important principles (most damage caused) (for)ever, this year, this month 
+
+How it should look like 
+
+[all times][this year][this month] // radio buttons? tabs may be nicer, but radio buttons may do for now 
+
+1. /* rank */ 124 /* total time */ 3 /* #occurrences, important to break ties */
+
+START WITH RULESLIST (so I have something visible)
+
+#TODO:
+1. ensure it works with more than 1 rule => SEEMS OKAY 
+2. sort rules on severity
+    2a. Calculate severity of a rule 
+        2aI: read in issues. DONE! 20200827=15:37
+        2aII: for each rule, calculate a total score based on the sum of issues referring to that rule. Show it as the second element 
+    2b. Now sort rules on severity 
+
+
 
